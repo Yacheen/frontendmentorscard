@@ -1,0 +1,25 @@
+$paragraph: calc(1rem + 1vw);
+$lowkey-text: calc(0.4rem + 1vw);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.card {
+  position: relative;
+  width: 20vw;
+  height: 40vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  #upper-half {
+    height: 45vw;
+    width: 100%;
+  }
+}
