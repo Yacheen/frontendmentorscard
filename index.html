@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="style.css">
-  
+  <link rel="stylesheet" href="./styles/style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
   <title>Frontend Mentor | Profile card component</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -16,34 +16,50 @@
   </style>
 </head>
 <body>
-  <div class="card">
-    <div id="upper-half">
+  <section id="background-circles">
+    <img class="circle-one circle" src="./images/bg-pattern-top.svg">
+    <img class="circle-two circle"src="./images/bg-pattern-bottom.svg">
+  </section>
+  <section id="card-section">
+    <div class="card">
+
+      <div id="upper-half">
+      </div>
+
+      <div id="bottom-half">
+        <div id="profile-picture">
+          <img src="./images/image-victor.jpg"
+        </div>
+
+        <section id="bio">
+          <div id="bio-name">
+            <p>Victor Crest</p><p style="font-weight: 400; color: hsl(0, 0%, 59%); padding-left: 6px">26</p>
+          </div>
+
+          <p style="font-weight: 400; font-size: 12px; color: hsl(0, 0%, 59%); text-align: center; margin-top: 10px;">London</p>
+        </section>
+
+      <hr style="color: hsl(0, 0%, 59%); opacity: 0.1; margin-bottom: 32px;">
+        
+        <section id="presence">
+          <p class="presence-amount">80K</p>
+          
+          <p class="presence-amount">803K</p>
+          
+          <p class="presence-amount">1.4K</p>
+        </section>
+
+        <section id="presence-label">
+          <p class="lowkeyed-interaction-label">Followers</p>
+
+          <p class="lowkeyed-interaction-label">Likes</p>
+
+          <p class="lowkeyed-interaction-label">Photos</p>
+        </section>
       
 
     </div>
-    <div id="bottom-half">
-
-    
-    <div id="profile-picture">
-
-    </div>
-
-    <div id="bio">
-      <p>Victor Crest 26</p>
-      <p>London</p>
-    </div>
-  
-    <div id="presence-info">
-      <p>80K
-        Followers</p>
-
-     <p>803K
-      Likes</p>
-
-      <p>1.4K
-      Photos</p>
-    </div>
-  </div>
+</section>
   
 </div>
   <div class="attribution">
